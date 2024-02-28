@@ -20,6 +20,8 @@ dependencies {
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testImplementation("org.testcontainers:junit-jupiter")
     //add dependencies as needed
+    implementation("org.springframework.boot:spring-boot-starter-data-jpa")
+    runtimeOnly("com.microsoft.sqlserver:mssql-jdbc:12.4.2.jre11")
 }
 
 tasks.withType<Test> {
